@@ -9,7 +9,7 @@ function updateObjectWithKeyAndValue(recipes, ) {
   return newSandwich;
 }
 // Deleting an Object (non-destructively)
-function deleteFromObjectByKey(recipes, newSandwich1) {
+function deleteFromObjectByKey(recipes, sandwichB) {
   var newSandwich1 = Object.assign({}, recipes);
   delete newSandwich1.sandwichB;
   return newSandwich1;
