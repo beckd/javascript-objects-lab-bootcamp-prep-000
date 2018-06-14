@@ -4,7 +4,10 @@ var recipes = {
   sandwichC: 'tuna'
 };
 // Updating an Object (non-destructively)
-Object.assign({[sandwichD]: 'salami'}, recipes);
+function updateObjectWithKeyAndValue() {
+  var newSandwich = Object.assign( {[sandwichD]: 'salami'}, recipes);
+  return newSandwich;
+}  
 // Deleting an Object (non-destructively)
 var newObj2 = Object.assign({}, recipes);
 delete newObj2.sandwichB;
@@ -13,4 +16,3 @@ delete recipes.sandwichA;
 // updating and object with key and value (destructively)
 recipes.sandwichE = 'roast beef';
 console.log(recipes)
-recipes;
