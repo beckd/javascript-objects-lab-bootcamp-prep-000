@@ -4,7 +4,7 @@ var recipes = {
   sandwichC: 'tuna'
 };
 // Updating an Object (non-destructively)
-function updateObjectWithKeyAndValue(recipes, ) {
+function updateObjectWithKeyAndValue(recipes, newSandwich) {
   var newSandwich = Object.assign( {[sandwichD]: 'salami'}, recipes);
   return newSandwich;
 }
