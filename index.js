@@ -8,13 +8,8 @@ function updateObjectWithKeyAndValue(object, key, value) {
   return Object.assign({}, object, { [key]: value});
 }
 // Deleting an Object (non-destructively)
-function deleteFromObjectByKey(recipes, sandwichB, newSandwich1) {
-  var newSandwich1 = Object.assign({}, recipes);
-  delete newSandwich1[sandwichB];
-  return newSandwich1;
+function deleteFromObjectByKey(object, key, value) {
+  var newObject = Object.assign({}, object);
+  delete newObject[key];
+  return newObject;
 }
-// Delete object by key (destructively)
-delete recipes.sandwichA;
-// updating and object with key and value (destructively)
-recipes.sandwichE = 'roast beef';
-console.log(recipes)
